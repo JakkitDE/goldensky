@@ -4,6 +4,10 @@ html, body {
     padding: 0;
 }
 
+.parent{
+    z-index: 0;
+}
+
 body {
     background-image: url(https://i.pinimg.com/originals/11/cd/ed/11cded915eb64199b9f01e7dfb346745.png);
     background-attachment: fixed;
@@ -44,6 +48,7 @@ body {
     height: 250px;
     padding: 5px 5px 5px 5px;
     background: rgba(0, 0, 0, 0.75);
+    width: 300px;
 }
 
 .footer-div {
@@ -74,30 +79,62 @@ h2 {
     font-family: "Minecraft", sans-serif;
 }
 
-ul, li {
-    color: white;
+a {
+    color: rgb(154, 154, 154);
     font-family: sans-serif;
     font-size: 15px;
     list-style-type: none;
-}
-
-li {
     cursor: grab;
+    float: left;
+    text-decoration: none;
+    margin-right: 10px;
 }
 
-li:hover {
+.navigation{
+    margin-left: 60px;
+}
+
+a:hover {
     color: rgb(97, 235, 11);
-    font-size: 24px;
-    animation: fadeIn 1s;
 }
 
-.arrowSymbol {
+.popup-how-to-join{
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 5px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-x: hidden; /* Enable scroll if needed */
+    overflow-y:scroll;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
+    visibility: hidden;
+}
+.popup-how-to-join-content{
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 5px;
+    width: 60%;
+    overflow-x: hidden; /* Enable scroll if needed */
+    overflow-y: scroll;
+    visibility: hidden;
+}
+.popup-how-to-join-content h1{
+    color: rgb(81, 81, 81);
+    font-family: sans-serif;
+}
+
+/*.arrowSymbol {
     width: 30px;
     height: 10px;
     float: left;
     margin-right: 5px;
     margin-top: 5px;
-}
+}*/
 
 .logo {
     width: 75px;
@@ -154,6 +191,17 @@ li:hover {
 .preview-image {
     width: 384px;
     height: 216px;
+}
+.preview-image-gif {
+    width: 50%;
+    height: auto;
+}
+
+.close-x{
+    margin-left: 100%;
+}
+.close-x:hover{
+    cursor: grab;
 }
 
 figure {

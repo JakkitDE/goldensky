@@ -23,6 +23,11 @@ function getCookie(cname) {
     return "";
 }
 
+document.getElementById("close-x").addEventListener("click", function(){
+    document.getElementById('popup-how-to-join').style.visibility = "hidden";
+    document.getElementById('popup-how-to-join-content').style.visibility = "hidden";
+});
+
 if(getCookie("popupShown") != "true"){
     document.getElementById('popup').style.visibility = "visible";
 }
