@@ -83,7 +83,7 @@ class MinecraftVotifier {
 <p>
 	Im Folgenden kannst du deinen Vote platzieren!
 	<?php
-		$votifier = new MinecraftVotifier('MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi21TFo3Vbt+RUYDri8Ge0owdn2/1SwruFaO2wUKGqsQS0wJ/svf8W+RxptCO9+AsphdN2ouBTY9gaImmIanlbSTQcGGt5HipU6mGHctgyb0ucw8MBOnl5UPtKhFTldEokbbq78/hG7e8BAidgkCpW4LvQVjy2QO8RcaTw7gTgGCtZ596kunBqfzbIdY0ncBxot3RpIBGGrssUEqcHH0jJeLAa4ZM3lRcYU+v8sGwZ7IU+nUyuNZuJ8/vFsj+TDlwkotXBO+rj+9w5El873mE7i31vbHdzzz8WfP55Z2VvcYkDCPmv3o6Ji1e0QN2p2TVX6CNATCfFDb+HF3UuJbgbQIDAQAB', '87.98.147.82', '8192', 'golden-sky');
+		$votifier = new MinecraftVotifier('MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi21TFo3Vbt+RUYDri8Ge0owdn2/1SwruFaO2wUKGqsQS0wJ/svf8W+RxptCO9+AsphdN2ouBTY9gaImmIanlbSTQcGGt5HipU6mGHctgyb0ucw8MBOnl5UPtKhFTldEokbbq78/hG7e8BAidgkCpW4LvQVjy2QO8RcaTw7gTgGCtZ596kunBqfzbIdY0ncBxot3RpIBGGrssUEqcHH0jJeLAa4ZM3lRcYU+v8sGwZ7IU+nUyuNZuJ8/vFsj+TDlwkotXBO+rj+9w5El873mE7i31vbHdzzz8WfP55Z2VvcYkDCPmv3o6Ji1e0QN2p2TVX6CNATCfFDb+HF3UuJbgbQIDAQAB', '87.98.147.82', 8192, 'golden-sky');
 		$votifier->sendVote('Kadnick');
 
 	?>
