@@ -40,3 +40,7 @@ document.getElementById('join-link').addEventListener("click", function(){
 	document.getElementById('popup-how-to-join').style.visibility = "visible";
     document.getElementById('popup-how-to-join-content').style.visibility = "visible";
 });
+
+document.getElementById('vote_action').addEventListener("click", function(){
+  let callFile = $.post( "vote_action.php", function(data) {});
+});
