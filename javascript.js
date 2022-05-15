@@ -35,3 +35,8 @@ document.getElementById('cookiePopupId').addEventListener("click", function(){
     setCookie("popupShown", "true", "360");
     document.getElementById('popup').style.visibility = "hidden";
 });
+
+document.getElementById('join-link').addEventListener("click", function(){
+	document.getElementById('popup-how-to-join').style.visibility = "visible";
+    document.getElementById('popup-how-to-join-content').style.visibility = "visible";
+});
