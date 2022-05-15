@@ -9,9 +9,15 @@ html, body {
 }
 
 body {
-    background-image: url(https://i.pinimg.com/originals/11/cd/ed/11cded915eb64199b9f01e7dfb346745.png);
+    /*background-image: url(https://i.pinimg.com/originals/11/cd/ed/11cded915eb64199b9f01e7dfb346745.png);*/
+	background-image: url(background.jpg);
     background-attachment: fixed;
     background-size: cover;
+	scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
 }
 
 .header-div {
@@ -46,7 +52,7 @@ body {
     margin: 10px 10px 10px 10px;
     border-radius: 4px;
     height: 250px;
-    padding: 5px 5px 5px 5px;
+    padding: 5px 10px 5px 10px;
     background: rgba(0, 0, 0, 0.75);
     width: 300px;
 }
@@ -98,6 +104,13 @@ a:hover {
     color: rgb(97, 235, 11);
 }
 
+.status-image{
+	width: 10px;
+	height: 10px;
+}
+.right{
+	text-align: right;
+}
 .popup-how-to-join{
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -107,7 +120,7 @@ a:hover {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow-x: hidden; /* Enable scroll if needed */
-    overflow-y:scroll;
+    overflow-y:auto;
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4);
     visibility: hidden;
@@ -118,9 +131,9 @@ a:hover {
     padding: 20px;
     border: 1px solid rgb(77, 77, 77);
     border-radius: 5px;
-    width: 60%;
+    width: 30%;
     overflow-x: hidden; /* Enable scroll if needed */
-    overflow-y: scroll;
+    overflow-y: auto;
     visibility: hidden;
 }
 .popup-how-to-join-content h1{
@@ -191,12 +204,16 @@ a:hover {
 .preview-image {
     width: 384px;
     height: 216px;
+	border-radius: 25px;
 }
 .preview-image-gif {
-    width: 50%;
+    width: 100%;
     height: auto;
+	border-radius:15px;
 }
-
+#join-link{
+	margin-left: 75px;
+}
 .close-x{
     margin-left: 100%;
 }
@@ -216,6 +233,26 @@ figcaption {
     word-spacing: 4px;
     text-align: justify;
     text-align: center;
+}
+
+table {  
+	font-family:sans-serif;
+}
+th, td {
+	padding:.25em .5em;
+    text-align:center;
+}
+td {
+	background-color:#eee;    
+}
+th {
+    background-color: rgba(0, 140, 28, 1);
+    color:#fff;
+}
+.ol-regelwerk{
+	color: rgb(120, 120, 120); 
+	font-family: sans-serif;
+	size: 18px;
 }
 
 /* mc buttons */
