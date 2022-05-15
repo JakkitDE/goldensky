@@ -32,7 +32,7 @@
 							include('regelwerk.html');
 							break;
 						case "votes":
-							include('voten.html');
+							include('voten.php');
 							break;
 						case "ranks":
 							include('raenge.html');
